@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="books-container">
+            <h2>The Great Gatsby</h2>
+            <h5>F. Scott Fitzgerald</h5>
+            <p>The luxurious Jazz Age of the 1920s is brought to life for the reader in F. Scott Fitzgerald's "The Great Gatsby," where parties and social intrigue swirl around the collision of ambition, love, and riches. The mysterious Jay Gatsby, a self-made millionaire whose opulent lifestyle hides a yearning for the past and an obsession with the elusive Daisy Buchanan.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+        <div class="books-container">
+            <h2>The Night Circus</h2>
+            <h5>Erin Morgenstern</h5>
+            <p>Erin Morgenstern's captivating story "The Night Circus" carries readers away to a magical and fantastical place. The plot revolves around the fates of Celia and Marco, two teenage magicians destined to face off in a magical duel, against the backdrop of an enigmatic circus that magically appears Wonders,illusions and mysteries.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+        <div class="books-container">
+            <h2>Never Let Me Go</h2>
+            <h5>Kazuo Ishiguro</h5>
+            <p>Kazuo Ishiguro's "Never Let Me Go" is a melancholic examination of love, identity, and scientific ethics. In this dystopian society, where clones are raised for organ donation, Kathy, Tommy, and Ruth must face their impending fate and work through the difficulties of daily life. Ishiguro creates a moving novel that stays in the mind long after the last page.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+        <div class="books-container">
+            <h2>The Song of Achilles</h2>
+            <h5>Madeline Miller</h5>
+            <p>Madeline Miller's "The Song of Achilles" is a compelling recounting of the old Greek epic of Achilles and Patroclus. Readers are taken to the ancient world through Miller's poetic prose, where the Trojan War serves as the backdrop for the development of the relationship between Patroclus, Achilles' devoted companion, and the finest fighter of his generation.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+        <div class="books-container">
+            <h2>Station Eleven</h2>
+            <h5>Emily St. John Mandel</h5>
+            <p>The compelling book "Station Eleven" by Emily St. John Mandel takes place in the wake of a catastrophic flu pandemic that has destroyed civilization as we know it. Readers are transported across time and space by Mandel's deft storytelling, which intertwines the lives of numerous characters prior to, during, and following the collapse of society.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+        <div class="books-container">
+            <h2>The Shadow of the Wind</h2>
+            <h5>Carlos Ruiz Zafón</h5>
+            <p>In the engrossing story "The Shadow of the Wind" by Carlos Ruiz Zafón, a little boy named Daniel Sempere finds a mysterious book that alters his life forever in post-war Barcelona. Daniel gets sucked into a labyrinth of secrets, love, and treachery as he explores the mysterious author's past in greater detail.</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+       <h2>Add Book</h2>
+       <form >
+       <input type="text" placeholder="Book Title" id="bookTitle">
+       <input type="text" placeholder="Book Author" id="bookAuthor">
+       <textarea id="bookDesc" placeholder="Short Description"></textarea>
+       <button id="add-book">Add</button>
+       <button id="cancel-book">Cancel</button>
+    </form>
+    </div>
+    <button class="button" id="popup-btn">+</button>
+    <script src="demo.js"></script>
+</body>
+
+</html>
